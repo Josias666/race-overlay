@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Overlay - 10K/5K</title>
+    <link rel="stylesheet" href="/css/overlay.css">
+</head>
+<body>
+    <!-- Fondo transparente para vMix -->
+    <div class="overlay-container">
+        
+        <!-- Header con nombre del evento -->
+        <div class="event-header" id="event-header">
+            <span class="event-icon">🏃</span>
+            <span class="event-name" id="event-name">Carrera Pedestre 11K</span>
+            <span class="live-badge">
+                <span class="live-dot"></span>
+                EN VIVO
+            </span>
+        </div>
+
+        <!-- Timer Principal - Categorías -->
+        <div class="timers-container">
+            <div class="timer-box" id="timer-10k-box" data-category="10K">
+                <div class="timer-category">10K</div>
+                <div class="timer-display" id="timer-10k">00:00:00</div>
+                <div class="timer-status" id="status-10k">ESPERANDO</div>
+            </div>
+            
+            <div class="timer-box" id="timer-5k-box" data-category="5K">
+                <div class="timer-category k5">5K</div>
+                <div class="timer-display" id="timer-5k">00:00:00</div>
+                <div class="timer-status" id="status-5k">ESPERANDO</div>
+            </div>
+        </div>
+
+        <!-- Leaderboard Lateral -->
+        <div class="leaderboard-container" id="leaderboard-container">
+            <div class="leaderboard-header">
+                <span>🏆 CLASIFICACIÓN</span>
+                <button class="toggle-btn" onclick="toggleLeaderboard()">−</button>
+            </div>
+            <div class="leaderboard-content" id="leaderboard">
+                <div class="empty-state">Esperando resultados...</div>
+            </div>
+        </div>
+
+        <!-- Banner de Última Llegada -->
+        <div class="finish-banner" id="finish-banner">
+            <div class="finish-icon">🏁</div>
+            <div class="finish-content">
+                <div class="finish-label" id="finish-category">10K - META</div>
+                <div class="finish-runner" id="finish-runner">Corredor #000</div>
+                <div class="finish-time" id="finish-time">00:00:00</div>
+                <div class="finish-position" id="finish-position">Posición: 1°</div>
+            </div>
+        </div>
+
+        <!-- Alerta de Inicio -->
+        <div class="start-alert" id="start-alert">
+            <div class="alert-content">
+                <div class="alert-icon">🚀</div>
+                <div class="alert-text">¡CARRERA INICIADA!</div>
+                <div class="alert-category" id="alert-category">10K</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/overlay.js"></script>
+</body>
+</html>
