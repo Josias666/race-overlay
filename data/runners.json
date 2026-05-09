@@ -3,62 +3,22 @@
     "10K": {
       "name": "10K",
       "color": "#ff3366",
-      "started": true,
-      "startTime": 1776128766465,
-      "currentTime": 19689,
-      "finished": true
+      "started": false,
+      "startTime": null,
+      "currentTime": 0,
+      "finished": false
     },
     "5K": {
       "name": "5K",
       "color": "#00d4aa",
-      "started": true,
-      "startTime": 1776128791304,
-      "currentTime": 5109,
-      "finished": true
+      "started": false,
+      "startTime": null,
+      "currentTime": 0,
+      "finished": false
     }
   },
-  "runners": [
-    {
-      "id": 1776128806078,
-      "bib": 123,
-      "category": "10K",
-      "name": "Josias ",
-      "finishTime": 39613,
-      "timestamp": 1776128806078,
-      "position": 1
-    },
-    {
-      "id": 1776128823920,
-      "bib": 583,
-      "category": "10K",
-      "name": "Test 583",
-      "finishTime": 57455,
-      "timestamp": 1776128823920,
-      "position": 2
-    }
-  ],
-  "leaderboard": [
-    {
-      "id": 1776128806078,
-      "bib": 123,
-      "category": "10K",
-      "name": "Josias ",
-      "finishTime": 39613,
-      "timestamp": 1776128806078,
-      "position": 1,
-      "overallPosition": 1
-    },
-    {
-      "id": 1776128823920,
-      "bib": 583,
-      "category": "10K",
-      "name": "Test 583",
-      "finishTime": 57455,
-      "timestamp": 1776128823920,
-      "position": 0,
-      "overallPosition": 2
-    }
-  ],
+  "runners": [],
+  "leaderboard": [],
   "lastFinish": {
     "id": 1776128806078,
     "bib": 123,
